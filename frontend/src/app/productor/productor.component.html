@@ -1,0 +1,5 @@
+<form nz-form [formGroup]="form" (ngSubmit)="submitForm()">
+  <input nz-input placeholder="Mensaje" formControlName="message" />
+
+  <button nz-button nzType="primary" [disabled]="!form.valid">Submit</button>
+</form>
